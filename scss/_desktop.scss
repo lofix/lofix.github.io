@@ -175,15 +175,12 @@ h3 {
 .text {
     width: 500px;
     margin: 0 auto;
-
-    p {
-        font-family: 'Ubuntu', sans-serif;
-        color: #ffffff;
-        font-size: 0.938rem;
-        font-weight: 400;
-        line-height: 1.533;
-        text-align: center;
-    }
+    font-family: 'Ubuntu', sans-serif;
+    color: #ffffff;
+    font-size: 0.938rem;
+    font-weight: 400;
+    line-height: 1.533;
+    text-align: center;
 }
 
 .magnifier {
@@ -197,8 +194,11 @@ h3 {
 /*** Gallery ***/
 #gallery {
     display: none;
-    position: relative;
-    z-index: 3;
+    position: fixed;
+    top: 0;
+    background: #fefefe;
+    height: 100vh;
+    overflow: scroll;
 }
 
 .close_btn {
@@ -208,26 +208,25 @@ h3 {
     background-size: contain;
     background-repeat: no-repeat;
     margin: 0 auto 45px;
-    border: 1px solid #4d4d4f;
-    border-radius: 100%;
+    position: fixed;
+    right: 15px;
 }
 
 #columns {
     column-count: 5;
     column-gap: 15px;
-    width: 90%;
+    width: 85%;
     margin: 50px auto;
     position: relative;
     z-index: 3;
 }
 
-div#columns figure {
+#columns figure {
     border-radius: 10px;
-    margin: 0 2px 15px;
+    margin: 0 auto 15px;
     padding: 15px 15px 10px;
     transition: opacity 0.4s ease-in-out;
     display: inline-block;
-    column-break-inside: avoid;
     background-color: #f1f2f2;
 }
 
