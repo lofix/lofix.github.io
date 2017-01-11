@@ -20,14 +20,15 @@ $(document).ready(function() {
         var closingBtn = $(".closing_btn");
         hamburgerMenu.on("click", function() {
             $(this).addClass("invisible");
-            hamburgerMenuBig.addClass("visible");
+            // hamburgerMenuBig.addClass("visible");
+            hamburgerMenuBig.toggle("slide");
             $(this).removeClass("visible");
         })
         closingBtn.on("click", function() {
+            // hamburgerMenuBig.removeClass("visible");
+            // hamburgerMenuBig.addClass("invisible");
+            hamburgerMenuBig.toggle("slide");
             hamburgerMenu.removeClass("invisible");
-            hamburgerMenuBig.removeClass("visible");
-            hamburgerMenuBig.addClass("invisible");
-            // hamburgerMenuBig.css("width", "100vw");
         })
     }
 
@@ -57,8 +58,9 @@ $(document).ready(function() {
             }, 1000);
             hamburgerMenu.removeClass("invisible");
             hamburgerMenu.addClass("visible");
-            hamburgerMenuBig.removeClass("visible");
-            hamburgerMenuBig.addClass("invisible");
+            hamburgerMenuBig.toggle("slide");
+            // hamburgerMenuBig.removeClass("visible");
+            // hamburgerMenuBig.addClass("invisible");
             // hamburgerMenuBig.css("width", "0");
         })
     }
