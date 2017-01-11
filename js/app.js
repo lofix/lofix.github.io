@@ -47,7 +47,7 @@ $(document).ready(function() {
 
     //Mobile Navigation
     var activeMobileNavigation = function() {
-        var mobileMenu = $("#mob_menu, #desktop_menu");
+        var mobileMenu = $("#mob_menu");
         var mobileSectionNames = mobileMenu.find(".sec_name");
         var hamburgerMenuBig = $("#hamb_menu_big");
         var hamburgerMenu = $("#hamb_menu");
@@ -59,9 +59,7 @@ $(document).ready(function() {
             hamburgerMenu.removeClass("invisible");
             hamburgerMenu.addClass("visible");
             hamburgerMenuBig.toggle("slide");
-            // hamburgerMenuBig.removeClass("visible");
-            // hamburgerMenuBig.addClass("invisible");
-            // hamburgerMenuBig.css("width", "0");
+
         })
     }
 
