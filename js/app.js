@@ -27,6 +27,7 @@ $(document).ready(function() {
             hamburgerMenu.removeClass("invisible");
             hamburgerMenuBig.removeClass("visible");
             hamburgerMenuBig.addClass("invisible");
+            // hamburgerMenuBig.css("width", "100vw");
         })
     }
 
@@ -58,6 +59,7 @@ $(document).ready(function() {
             hamburgerMenu.addClass("visible");
             hamburgerMenuBig.removeClass("visible");
             hamburgerMenuBig.addClass("invisible");
+            // hamburgerMenuBig.css("width", "0");
         })
     }
 
